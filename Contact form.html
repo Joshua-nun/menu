@@ -42,3 +42,40 @@ value="eg.hello@contact.net"><br><br>
 </form>
 </Body>
 </html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment 2</title>
+    <style>
+        #click {
+            font-size: 25px;
+            color: blue;
+        }
+    </style>
+</head>
+<body>
+    <p id="click">click here!</p>
+    <script>
+        var x = document.getElementById("click");
+        x.addEventListener("click", myFunction);
+        x.addEventListener("contextmenu", function(event) {
+            event.preventDefault();
+            myFunction(event);
+        });
+
+        function myFunction(event) {
+            if (event.type === "contextmenu") {
+                document.getElementById("click").innerHTML = "you have right clicked";
+                alert("you have right clicked");
+                x.style.color = "blue";
+            } else {
+                document.getElementById("click").innerHTML = "you have left clicked";
+                alert("you have left clicked");
+                x.style.color = "red";
+            }
+        }
+    </script>
+</body>
+</html>
