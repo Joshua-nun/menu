@@ -40,7 +40,7 @@ int main ()
 	cout <<"November";
 	break;
 	case12:
-	cout <<"Dcember";
+	cout <<"December";
 	break;
 	default:
 		cout <<"Invalid month number.Please enter number between1 and 12.";
