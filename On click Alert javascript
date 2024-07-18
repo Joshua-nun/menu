@@ -26,10 +26,9 @@
                 document.getElementById("click").innerHTML = "you have right clicked";
                 alert("you have right clicked");
                 x.style.color = "blue";
-            } else {
-                
-
-document.getElementById("click").innerHTML = "you have left clicked";
+            } else 
+               {
+                document.getElementById("click").innerHTML = "you have left clicked";
                 alert("you have left clicked");
                 x.style.color = "red";
             }
