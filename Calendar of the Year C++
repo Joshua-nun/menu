@@ -5,7 +5,7 @@ int main ()
 	int month;
 	cout <<"Enter a Number (1-12):";
 	cin >>month;
-	switch (month){
+	switch   (month){
 	case1:
 	cout <<"January";
 	break;
