@@ -14,9 +14,9 @@ int main()
 			case'b':
 				cout<<"Good"<<endl;
 				break;
-				case 'C':
+				case 'C':  
 					case'c':
-						cout<<"Pass"<<endl;
+						  cout<<"Pass"<<endl;
 						break;
 						case 'D':
 							case'd':
