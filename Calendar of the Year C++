@@ -10,7 +10,7 @@ int main ()
 	cout <<"January";
 	break;
 	case2:
-	cout <<"February";
+	cout     <<"February";
 	break;
 	case3:
 	cout <<"March";
