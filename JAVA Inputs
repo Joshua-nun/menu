@@ -1,0 +1,39 @@
+import java.util.Scanner;
+
+class HelloWorld {
+    public static void main(String[] args) {
+        System.out.printf("Try programiz.pro\n");
+
+        // Create a Scanner object to read input
+        Scanner obj = new Scanner(System.in);
+
+        // Variables
+        String model, plate;
+        double bp, sp, p;
+
+        // Input car details
+        System.out.printf("Enter car model: ");
+        model = obj.nextLine();  // Corrected to nextLine()
+
+        System.out.printf("\tPlate No.: ");
+        plate = obj.nextLine();  // Use plate for the plate number
+
+        System.out.printf("\tBuying price: ");
+        bp = obj.nextDouble();  // Reading the buying price as a double
+
+        // Calculate the selling price (150.45% of the buying price)
+        sp = (150.45 / 100) * bp;
+
+        // Calculate profit
+        p = sp - bp;
+
+        // Output the car details
+        System.out.printf(
+            "\nModel:\t%s\n\tPlate No.:\t%s\n\tBuying Price:\tKsh. %.2f\n\tSelling Price:\tKsh. %.2f\n\tProfit:\tKsh. %.2f",
+            model, plate, bp, sp, p
+        );
+
+        // Close the scanner
+        obj.close();
+    }
+}
