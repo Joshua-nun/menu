@@ -1,0 +1,94 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>JavaScript Arthmetic Operators using Select Tag</title>
+<script>
+function fun()
+{
+var a=parseInt(t1.value);
+var b=parseInt(t2.value);
+var op = document.getElementById("s1").value;
+if(op == "Sum")
+var c = a + b;
+if(op == "Sub")
+var c = a - b;kj
+if(op == "Mul")
+var c = a * b;
+if(op == "Div")
+var c = a / b;
+document.getElementById("output").innerHTML = "Result = " + c;
+}
+</script>
+</head>
+ 
+<body>
+<form>
+    <table>
+        <tr>
+            <td>Enter 1st Number</td>
+                <td><input type="text" id="t1" /></td>
+            </tr>
+            <tr>
+            <td>Enter 2nd Number</td>
+                <td><input type="text" id="t2" /></td>
+            </tr>
+            <tr>
+            <td></td>
+                <td> 
+                <select onChange="fun()" id="s1" style="width:173px;">
+                <option>Select</option>
+                    <option>Sum</option>
+                    <option>Sub</option>
+                    <option>Mul</option>
+                    <option>Div</option>
+                </select>
+                </td>
+            </tr>
+            <tr>
+            <td colspan="2" align="center"> 
+                <p id="output"> Output </p> 
+                </td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>
+QUESTION 2
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment 2</title>
+    <style>
+        #click {
+            font-size: 25px;
+            color: blue;
+        }
+    </style>
+</head>
+<body>
+    <p id="click">click here!</p>
+    <script>
+        var x = document.getElementById("click");
+        x.addEventListener("click", myFunction);
+        x.addEventListener("contextmenu", function(event) {
+            event.preventDefault();
+            myFunction(event);
+        });
+
+        function myFunction(event) {
+            if (event.type === "contextmenu") {
+                document.getElementById("click").innerHTML = "you have right clicked";
+                alert("you have right clicked");
+                x.style.color = "blue";
+            } else {
+                document.getElementById("click").innerHTML = "you have left clicked";
+                alert("you have left clicked");
+                x.style.color = "red";
+            }
+        }
+    </script>
+</body>
+</html>
